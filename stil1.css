@@ -1,0 +1,67 @@
+*{
+            
+    font-family: "Alex Brush", cursive;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 40px;
+  }
+     body{
+      background-color:#343a40;
+     }
+          
+     #titlu{
+        text-align: center;
+        color:white;
+       
+    }
+    .container_tit{
+        display:flex;
+        justify-content:center;
+        }
+        .leftbox{
+           
+            margin: 0 10px;
+            margin-top:7px;
+            /* margin-top: 10%; */
+          animation:moveFromLeft 2s forwards;
+        
+        }
+        
+        .middlebox{	
+            margin: 0 10px;
+            /* margin-top: 10%; */
+         
+        }
+        .rightbox{
+        
+            margin: 0 10px;
+            /* margin-top: 9.5%; */
+            animation:moveFromRight 2s forwards;
+        }
+        
+        @keyframes moveFromLeft{
+         0%	{
+            transform:translateX(-100%);/*inceput stanga*/	
+            
+            }
+        100%	{
+            transform:translateX(0);/*pozitia finala*/
+            }
+        }
+        @keyframes moveFromRight {
+          0% {
+            transform:translateX(100%); 
+        /* începutul poziției din dreapta */
+          }
+          100% {
+            transform:translateX(0); 
+        /* poziția finală în centru */
+        }
+        }
+  
+#date_pers{
+   
+
+    font-style: normal;
+    font-size: 60px;
+ }
